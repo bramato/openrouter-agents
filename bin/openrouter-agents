@@ -1,0 +1,27 @@
+#!/usr/bin/env node
+
+const path = require('path');
+const fs = require('fs');
+
+// Check if running from source (development) or built (production)
+const distPath = path.join(__dirname, '..', 'dist', 'cli', 'index.js');
+const srcPath = path.join(__dirname, '..', 'src', 'cli', 'index.ts');
+
+if (fs.existsSync(distPath)) {
+  // Production: use built file
+  require(distPath);
+} else if (fs.existsSync(srcPath)) {
+  // Development: use tsx to run TypeScript directly
+  try {
+    require('tsx/dist/cli.js');
+    require(srcPath);
+  } catch (error) {
+    console.error('❌ Development mode requires tsx to be installed.');
+    console.error('   Run: npm install -g tsx');
+    process.exit(1);
+  }
+} else {
+  console.error('❌ Could not find CLI entry point.');
+  console.error('   Build the project with: npm run build');
+  process.exit(1);
+}
