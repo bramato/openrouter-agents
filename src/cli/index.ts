@@ -1,16 +1,16 @@
 #!/usr/bin/env node
 
 import { Command } from 'commander';
-import { ASCIIArt } from './utils/ascii-art.js';
+import { ASCIIArt } from './utils/ascii-art';
 import chalk from 'chalk';
-import { version } from '../index.js';
+import { version } from '../index';
 
 // Import commands
-import { createCommand } from './commands/create.js';
-import { listCommand } from './commands/list.js';
-import { configCommand } from './commands/config.js';
-import { chatCommand } from './commands/chat.js';
-import { testCommand } from './commands/test.js';
+import { createCommand } from './commands/create';
+import { listCommand } from './commands/list';
+import { configCommand } from './commands/config';
+import { chatCommand } from './commands/chat';
+import { testCommand } from './commands/test';
 
 const program = new Command();
 

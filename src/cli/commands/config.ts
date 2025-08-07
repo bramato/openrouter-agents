@@ -1,5 +1,5 @@
 import { Command } from 'commander';
-import { ASCIIArt } from '../utils/ascii-art.js';
+import { ASCIIArt } from '../utils/ascii-art';
 import chalk from 'chalk';
 import inquirer from 'inquirer';
 

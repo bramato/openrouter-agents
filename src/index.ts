@@ -1,12 +1,12 @@
 // Export all core components
-export * from './core/index.js';
-export * from './types/index.js';
+export * from './core/index';
+export * from './types/index';
 
 // Version information
-export const version = '1.0.0';
+export const version = '1.2.3';
 
 // Default exports for convenience
-export { OpenRouterClient as Client } from './core/OpenRouterClient.js';
-export { OpenRouterAPI as API } from './core/OpenRouterAPI.js';
-export { Agent } from './core/Agent.js';
-export { AgentManager as Manager } from './core/AgentManager.js';
+export { OpenRouterClient as Client } from './core/OpenRouterClient';
+export { OpenRouterAPI as API } from './core/OpenRouterAPI';
+export { Agent } from './core/Agent';
+export { AgentManager as Manager } from './core/AgentManager';

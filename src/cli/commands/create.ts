@@ -1,8 +1,8 @@
 import { Command } from 'commander';
-import { ASCIIArt } from '../utils/ascii-art.js';
+import { ASCIIArt } from '../utils/ascii-art';
 import chalk from 'chalk';
 import inquirer from 'inquirer';
-import { AgentConfig, AgentType } from '../../types/index.js';
+import { AgentConfig, AgentType } from '../../types/index';
 
 export const createCommand = new Command()
   .name('create')

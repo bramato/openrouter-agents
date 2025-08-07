@@ -1,7 +1,7 @@
 import { Command } from 'commander';
-import { ASCIIArt } from '../utils/ascii-art.js';
+import { ASCIIArt } from '../utils/ascii-art';
 import chalk from 'chalk';
-import { OpenRouterAPI } from '../../core/OpenRouterAPI.js';
+import { OpenRouterAPI } from '../../core/OpenRouterAPI';
 
 export const listCommand = new Command()
   .name('list')

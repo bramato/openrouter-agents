@@ -1,5 +1,5 @@
-import { Agent } from './Agent.js';
-import { AgentConfig, AgentType, OpenRouterConfig } from '../types/index.js';
+import { Agent } from './Agent';
+import { AgentConfig, AgentType, OpenRouterConfig } from '../types/index';
 
 export class AgentManager {
   private agents: Map<string, Agent> = new Map();

@@ -1,5 +1,5 @@
-import { OpenRouterConfig, ServiceType } from '../types/index.js';
-import { APIRequest, APIResponse, APIError } from '../types/api.js';
+import { OpenRouterConfig, ServiceType } from '../types/index';
+import { APIRequest, APIResponse, APIError } from '../types/api';
 
 export class OpenRouterClient {
   private config: OpenRouterConfig;

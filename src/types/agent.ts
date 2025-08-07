@@ -1,4 +1,4 @@
-import { AgentConfig, AgentType } from './config.js';
+import { AgentConfig, AgentType } from './config';
 
 export interface AgentRequest {
   input: any;

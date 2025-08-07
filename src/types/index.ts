@@ -1,7 +1,7 @@
 // Re-export all types from submodules
-export * from './config.js';
-export * from './api.js';
-export * from './agent.js';
+export * from './config';
+export * from './api';
+export * from './agent';
 
 // Common utility types
 export type ServiceType = 'mockGenerator' | 'codeGenerator' | 'translation' | 'documentation' | 'custom';

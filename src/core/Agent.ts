@@ -1,4 +1,4 @@
-import { OpenRouterClient } from './OpenRouterClient.js';
+import { OpenRouterClient } from './OpenRouterClient';
 import { 
   AgentConfig, 
   AgentType, 
@@ -6,7 +6,7 @@ import {
   AgentResponse, 
   AgentCapabilities,
   BaseAgent 
-} from '../types/index.js';
+} from '../types/index';
 
 export abstract class Agent extends BaseAgent {
   protected client: OpenRouterClient;

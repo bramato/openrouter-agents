@@ -1,4 +1,4 @@
-import { OpenRouterModel, ModelCategory } from '../types/api.js';
+import { OpenRouterModel, ModelCategory } from '../types/api';
 
 export class OpenRouterAPI {
   private baseURL = 'https://openrouter.ai/api/v1';
