@@ -19,7 +19,7 @@ export class ASCIIArt {
         let result = data || text;
         
         if (options?.gradient) {
-          result = chalk.gradient(['#00f5ff', '#0066ff', '#6600ff'])(result);
+          result = chalk.cyan(result);
         }
         
         if (options?.border) {

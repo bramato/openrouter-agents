@@ -8,12 +8,11 @@ import {
   BaseAgent 
 } from '../types/index.js';
 
-export abstract class Agent implements BaseAgent {
-  protected config: AgentConfig;
+export abstract class Agent extends BaseAgent {
   protected client: OpenRouterClient;
 
   constructor(config: AgentConfig) {
-    this.config = config;
+    super(config);
     this.client = new OpenRouterClient(config.openRouter, this.mapAgentTypeToServiceType());
   }
 

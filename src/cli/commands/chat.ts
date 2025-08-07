@@ -40,7 +40,7 @@ export const chatCommand = new Command()
         selectedAgent = agent;
       }
 
-      await startChatSession(selectedAgent, options);
+      await startChatSession(selectedAgent!, options);
       
     } catch (error) {
       console.log(ASCIIArt.createError(`Chat error: ${error instanceof Error ? error.message : 'Unknown error'}`));

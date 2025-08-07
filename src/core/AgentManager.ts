@@ -35,13 +35,7 @@ export class AgentManager {
 
   createAgent(config: AgentConfig): Agent {
     // Import the specific agent class dynamically
-    const AgentClass = this.getAgentClass(config.type);
-    const agent = new AgentClass({
-      ...config,
-      openRouter: { ...this.defaultConfig, ...config.openRouter }
-    });
-    
-    return agent;
+    throw new Error(`AgentManager.createAgent() is deprecated. Use specific agent classes directly (e.g., MockDataAgent).`);
   }
 
   private getAgentClass(type: AgentType): typeof Agent {
