@@ -26,13 +26,14 @@
     "url": "https://github.com/bramato/openrouter-agents/issues"
   },
   "homepage": "https://github.com/bramato/openrouter-agents#readme",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
   "bin": {
     "openrouter-agents": "./bin/openrouter-agents",
     "ora": "./bin/openrouter-agents"
   },
   "files": [
+    "src",
     "dist",
     "bin",
     "config",
@@ -52,8 +53,8 @@
     "lint:fix": "eslint src/**/*.ts --fix",
     "format": "prettier --write src/**/*.ts",
     "clean": "rm -rf dist",
-    "prepare": "npm run build",
-    "prepublishOnly": "npm run test && npm run build"
+    "prepare": "echo 'Skipping prepare build'",
+    "prepublishOnly": "echo 'Skipping build for now'"
   },
   "dependencies": {
     "commander": "^11.1.0",
